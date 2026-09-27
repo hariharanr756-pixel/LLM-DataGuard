@@ -10,7 +10,7 @@
 
 ### 💻 GitHub Repository
 
-👉 [View the Project on GitHub](https://github.com/hariharan756-pixel/LLM-DataGuard)
+👉 [View the Project on GitHub](https://github.com/hariharanr756-pixel/LLM-DataGuard)
 
 ### 🖥️ PC / Desktop Demo
 
