@@ -1,0 +1,59 @@
+{
+    "config": {
+        "dataset_name": "IMDB",
+        "model_name": "TF-IDF + Logistic Regression",
+        "train_samples": 25000,
+        "test_samples": 25000,
+        "poisoned_samples": 1250,
+        "random_state": 42,
+        "max_features": 20000
+    },
+    "clean_model": {
+        "accuracy": 0.88276,
+        "f1": 0.8830360349575003
+    },
+    "poisoned_model": {
+        "accuracy": 0.879,
+        "f1": 0.8791691631715598
+    },
+    "impact": {
+        "accuracy_drop": 0.0037599999999999856,
+        "f1_drop": 0.0038668717859404733
+    },
+    "detection": {
+        "detector": "Isolation Forest",
+        "feature_extraction": "TF-IDF",
+        "random_state": 42,
+        "total_samples": 25000,
+        "actual_poisoned": 1250,
+        "actual_clean": 23750,
+        "flagged_samples": 1250,
+        "flag_rate": 0.05,
+        "precision": 0.0576,
+        "recall": 0.0576,
+        "f1": 0.0576,
+        "confusion_matrix": {
+            "true_positive": 72,
+            "false_positive": 1178,
+            "false_negative": 1178,
+            "true_negative": 22572
+        }
+    },
+    "summary": {
+        "detection_precision": 0.0576,
+        "detection_recall": 0.0576,
+        "detection_f1": 0.0576,
+        "avg_n_flagged": 1250,
+        "avg_flag_rate": 0.05,
+        "confusion_matrix": {
+            "true_positive": 72,
+            "false_positive": 1178,
+            "false_negative": 1178,
+            "true_negative": 22572
+        },
+        "true_positive": 72,
+        "false_positive": 1178,
+        "false_negative": 1178,
+        "true_negative": 22572
+    }
+}
