@@ -2462,7 +2462,6 @@ app = Dash(
     __name__,
     title="LLM DataGuard | Research Console",
     suppress_callback_exceptions=True,
-    serve_locally=True,
 )
 
 app.layout = shell()
